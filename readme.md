@@ -1,6 +1,6 @@
-# Django-HTMX Mediam styled blog clone
+# Django-HTMX Medium styled blog clone
 
-A Django website made dynamic with HTMX. The purpose of this project is to demonstrate the capabiliites of HTMX while showcasing the flexibility it adds to a the a template engine.
+A Django website made dynamic with HTMX. The purpose of this project is to demonstrate the capabilities of HTMX while showcasing the flexibility it adds to a template engine.
 
 To install:
 
