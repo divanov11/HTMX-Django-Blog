@@ -1,0 +1,20 @@
+<div id="sidebar">
+    <div id="stories--header">
+        {% include 'components/total.html' %}
+        <button  
+                class="btn"
+                hx-trigger="click"
+                hx-post="/api/posts/"
+                hx-target="#post--snippets"
+                hx-swap="afterbegin"
+            >Write a story
+        </button>
+    </div>
+
+    <div id="post--snippets">
+        {% for post in posts %}
+            {% include 'components/snippet.html' %}
+        {% endfor %}
+    </div>
+
+</div>

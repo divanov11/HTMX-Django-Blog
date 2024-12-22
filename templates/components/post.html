@@ -1,0 +1,16 @@
+<div hx-swap-oob="innerHTML:#page--container">
+    <div
+        hx-trigger="click"
+        hx-get="/api/posts/edit/{{post.id}}/"
+        hx-swap="innerHTML"
+        hx-target="#page--container"
+        >
+        {% include 'icons/edit.html' %}
+    </div>
+
+    <h1>{{post.title}}</h1>
+    <br>
+    <span>
+       {{post.body|linebreaksbr|safe}}
+    </span>
+</div>

@@ -1,0 +1,26 @@
+<form
+    hx-put="/api/posts/edit/{{post.id}}/"
+    hx-swap="outerHTML"
+    hx-target="#post--{{post.id}}"
+    >
+    <div style="display: flex;justify-content: space-between">
+
+        <div
+            hx-trigger="click"
+            hx-get="/api/posts/{{post.id}}/"
+            hx-swap="none"
+
+            >
+            {% include 'icons/view.html' %}
+        </div>
+        <input type="submit" value="Publish" class="btn" />
+    </div>
+
+    <div>
+        <input type="text" name="title" value="{{post.title}}"/>
+    </div>
+
+    <div>
+        <textarea name="body">{{post.body}}</textarea>
+    </div>
+</form>

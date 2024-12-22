@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<div 
+    id="sidebar"
+    hx-trigger="load"
+    hx-get="/api/sidebar/"
+    hx-swap="outerHTML"
+></div>
+
+<div id="page--container">
+    {% include 'components/post.html' %}
+</div>
+{% endblock %}
